@@ -1,0 +1,21 @@
+SRCS = src/main.cpp \
+	src/camera.cpp \
+	src/common.cpp \
+	src/file/filemanager.cpp \
+	src/file/filemanager_model.cpp \
+	src/file/filemanager_scene.cpp \
+	src/geometry.cpp \
+	src/kdtree.cpp \
+	src/mantaMgr.cpp \
+	src/matrix.cpp \
+	src/model.cpp \
+	src/polygon.cpp \
+	src/prop.cpp \
+	src/propMgr.cpp \
+	src/renderArea.cpp \
+	src/scene.cpp \
+	src/texture.cpp \
+	src/unittest.cpp \
+	src/vector.cpp \
+	src/view.cpp \
+	src/vlib/float.cpp

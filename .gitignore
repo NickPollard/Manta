@@ -1,0 +1,13 @@
+# Git Ignore file for Manta Project
+
+# Ignore vim swap files
+*.swp
+# Ignore object files
+*.o
+# Ignore .d dependency files
+*.d
+# Ignore asset
+*.png
+# Ignore the executable
+manta
+manta_debug

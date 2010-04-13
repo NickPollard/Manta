@@ -1,0 +1,5 @@
+## Manta Scene file
+##p assets/models/cube.obj 0.0 0.0 0.0
+p assets/models/cityscape.obj 0.0 0.0 0.0
+##p assets/models/cityscape.obj 7.5 0.0 0.0
+l 0.0 5.0 0.0 1.0 1.0 1.0
