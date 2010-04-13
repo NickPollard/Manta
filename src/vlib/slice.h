@@ -28,20 +28,27 @@ class slice
 		void Relocate(void* data) {
 			T* dest = (T*)data;
 			repeat(length) {
-				dest[i] = first[i];	}
-			first = dest;	}	// Don't implicitly free the memory, slices do not `own` their memory
+				dest[i] = first[i];	
+			}
+			first = dest;	// Don't implicitly free the memory, slices do not `own` their memory
+		}
 
 		// Add a new item to the end of the slice
 		void Append(T data)		{
 			first[length] = data;
-			++length;	}
+			++length;
+		}
 
 		void CopyAll(slice<T>& source) {
 			repeat(source.Length())	{
-				Append(source[i]);	} }
+				Append(source[i]);	
+			} }
 
 		// Reset the slice to zero, to be reused safely
-		void Reset()				{ length = 0; first = NULL; }
+		void Reset() {
+			length = 0;
+			first = NULL;
+		}
 
 		// Array access operator
 		T&			operator [] (int i)			{ return first[i]; }
